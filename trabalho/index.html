@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Use a versão 4 do Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+    <style>
+        /*imagem de fundo*/
+        .custom-bg {
+            background-image: url('fundo.jpg');
+            background-size: cover;
+        }
+    </style>
+    <style>
+        /*carrosel responsivo*/
+        @media (max-width: 576px) {
+            .custom-carousel-height {
+                height: 200px;
+            }
+        }
+
+        @media (min-width: 577px) and (max-width: 992px) {
+            .custom-carousel-height {
+                height: 300px;
+            }
+        }
+
+        @media (min-width: 1080px) {
+            .custom-carousel-height {
+                height: 400px;
+            }
+        }
+    </style>
+    <title>Arte&Ofício Academy</title>
+</head>
+
+<body class="custom-bg">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="Logo" style="width: 40px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Sobre empresa" data-scroll="smooth">A academy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicos" data-scroll="smooth">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-scroll="smooth" href="#contatos">Contatos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5" id="carousel-container">
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <div id="corresel" class="carousel slide" data-ride="carousel">
+
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#corresel" data-slide-to="0" class="active"></li>
+                        <li data-target="#corresel" data-slide-to="1"></li>
+                        <li data-target="#corresel" data-slide-to="2"></li>
+                    </ul>
+
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="carro1.jpg" alt="carro1" class="d-block w-100 custom-carousel-height">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="carro2.jpg" alt="carro2" class="d-block w-100 custom-carousel-height">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="carro3.jpg" alt="caro3" class="d-block w-100 custom-carousel-height">
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#corresel" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#corresel" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5" id="servicos">
+        <div class="row">
+            <!-- Card do Serviço 1 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="servico1.jpg" class="card-img-top" alt="Serviço 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Trabalho em madeira iniciantes</h5>
+                        <p class="card-text">Aprenda a entalhar, lixar e a pintar peças em madeira</p>
+                        <p class="card-text">Preço: R$ 150,00</p>
+                        <a href="servico1.html" class="btn btn-primary">Solicitar Orçamento</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card do Serviço 2 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="servico2.jpg" class="card-img-top" alt="Serviço 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Aulas de trico e croche nivel inciante</h5>
+                        <p class="card-text">Aprenda tecnicas de croche que facilitarao sua vida</p>
+                        <p class="card-text">Preço: R$ 50,00</p>
+                        <a href="servico2.html" class="btn btn-primary">Solicitar Orçamento</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card do Serviço 3 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="servico3.jpg" class="card-img-top" alt="Serviço 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Itens reciclaveis</h5>
+                        <p class="card-text">Aprenda a reaproveitar materias reciclaveis para decoração e utensilios</p>
+                        <p class="card-text">Preço: R$ 79,90</p>
+                        <a href="servico3.html" class="btn btn-primary">Solicitar Orçamento</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card do Serviço 4 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="servico4.jpg" class="card-img-top" alt="Serviço 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Aulas de trico avançado</h5>
+                        <p class="card-text">Aprenda e desenvolva tecnicas para confecção de peças elaboradas para venda
+                        </p>
+                        <p class="card-text">Preço: R$ 100,00</p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#orcamentoModal4">Solicitar
+                            Orçamento</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card do Serviço 5 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="servico5.jpg" class="card-img-top" alt="Serviço 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Titulo escultor de madeira</h5>
+                        <p class="card-text">Se torne um escultor em madeira aprendendo os segredos da realização das
+                            esculturas</p>
+                        <p class="card-text">Preço: R$ 149,90</p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#orcamentoModal4">Solicitar
+                            Orçamento</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container my-5" id="contatos">
+        <div class="row">
+            <!-- Informações de contato e formulário -->
+            <div class="col-md-6">
+                <h2>Informações de Contato</h2>
+                <p><strong>Endereço:</strong> Avenida Nereu Ramos, 377D - Chapeco, Santa Catarina</p>
+                <p><strong>Telefone:</strong> (49) 1234-5678 (49)8765-4321</p>
+                <p><strong>Email:</strong> Arte&Oficio@Arteofc.com.br</p>
+
+                <h2>Nos Envie uma Mensagem</h2>
+                <form action="processar_formulario.php" method="post">
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" class="form-control" id="nome" name="nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea class="form-control" id="mensagem" name="mensagem" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+
+            <!-- Mapa de geolocalização -->
+            <div class="col-md-6">
+                <h2>Localização</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19102.630965056574!2d-52.61062063220957!3d-27.12585393744378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e4b6a18142c0a3%3A0x8b11ef4e1a2c80bd!2sUnoesc%20Chapec%C3%B3!5e0!3m2!1spt-BR!2sbr!4v1694370971034!5m2!1spt-BR!2sbr"
+                    width="100%" height="520" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5" id="Sobre empresa">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Apresentação Institucional</h2>
+                <p>
+                    A Arte&Ofício Academy é uma escola dedicada a promover habilidades artesanais e criativas. Nossa missão é inspirar e capacitar pessoas a explorar seu potencial criativo e desenvolver habilidades valiosas.
+                </p>
+                <p>
+                    Fundada em 2010, nossa escola tem uma longa história de excelência no ensino de artesanato, escultura em madeira, tricô, crochê e muito mais. Nossos valores incluem a busca da excelência, o compromisso com a qualidade e a promoção da criatividade.
+                </p>
+                <p>
+                    Estamos dedicados a fornecer um ambiente de aprendizado acolhedor e colaborativo, onde nossos alunos podem prosperar e expressar sua paixão pelo artesanato.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <img src="fachada.png" alt="Fachada da Escola" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    
+    
+
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>Desenvolvido por Andre Tedesco Batistela &copy; 2023</p>
+            <p>Curso de Desenvolvivemento de sistemas UNOESC</p>
+        </div>
+    </footer>
+</body>
+
+</html>
